@@ -10,15 +10,24 @@ import model.Pelicula;
 public class Test {
 
 	public static void main(String[] args) throws Exception {
-		List<Pelicula> lisPeli = new ArrayList<Pelicula>();
-		Incaa i=new Incaa(lisPeli);
+		
+		Incaa i=new Incaa();
+		
 		Genero g1=new Genero("ficcion");
 		Genero g2=new Genero("fantasia");
 		Genero g3=new Genero("aventura");
-		i.agregarPelicula("aca1", g1);
-		i.agregarPelicula("ac2",g2);
+		i.agregarPelicula("aca1", g2);
+		i.agregarPelicula("ac2",g1);
 		i.agregarPelicula("harry",g3);
-		System.out.println( i.traerPelicula(g3));
+		//aca no habria que traer no solo una pelicula sino una lista copn las pelis de ese genero
+		System.out.println("traer pelicula por genero----\n");
+      System.out.println( i.traerPelicula(g1).toString());
+		System.out.println( i.traerPelicula(g2).toString());
+		System.out.println( i.traerPelicula(g3).toString());
+		System.out.println("traer pelicula por nombre----\n");
+		  System.out.println( i.traerPeliculaXnombre("aca1").toString());
+			System.out.println( i.traerPeliculaXnombre("ac2").toString());
+			System.out.println( i.traerPeliculaXnombre("harry").toString());
 	}
 
 }

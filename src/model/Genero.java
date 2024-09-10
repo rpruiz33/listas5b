@@ -3,7 +3,7 @@ package model;
 public class Genero {
 private int idGenero;
 private String genero;
-private static int contador=1;
+
 
 public int getIdGenero() {
 	return idGenero;
@@ -21,9 +21,9 @@ public String toString() {
 public void setGenero(String genero) {
 	this.genero = genero;
 }
-public Genero(String genero) {
+public Genero(int idGenero,String genero) {
 	super();
-	this.idGenero = contador++;
+	this.idGenero = idGenero;
 	this.genero = genero;
 } 
 
