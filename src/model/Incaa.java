@@ -3,8 +3,6 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
-import model.Pelicula;
-
 public class Incaa {
 	private List <Pelicula> catalogo;
 
