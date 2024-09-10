@@ -46,6 +46,8 @@ public String toString() {
 }
 
 //preguntar si asi esta bien el equals 
+
+
 public boolean equals(Pelicula p) {
 	return p.getIdPelicula()==(idPelicula) && p.getPelicula().equals(pelicula) && p.getGenero().equals(genero);
 }
